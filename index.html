@@ -3,10 +3,10 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Where Winds Meet - Epic Wuxia Adventure</title>
+<title>Where Winds Meet - Official Site</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -16,25 +16,20 @@
                     colors: {
                         "primary": "#c59f59",
                         "background-light": "#f8f7f6",
-                        "background-dark": "#1e1a14",
+                        "background-dark": "#12100e",
                     },
                     fontFamily: {
                         "display": ["Inter", "sans-serif"],
-                        "serif": ["Playfair Display", "serif"]
+                        "serif": ["Playfair Display", "serif"],
                     },
-                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
                 },
             },
         }
     </script>
 <style>
-        .wuxia-pattern {
-            background-image: radial-gradient(circle at 2px 2px, rgba(197, 159, 89, 0.05) 1px, transparent 0);
-            background-size: 24px 24px;
-        }
-        .gold-border-gradient {
-            border-image: linear-gradient(to bottom, #c59f59, #1e1a14) 1;
-        }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-display { font-family: 'Inter', sans-serif; }
     </style>
 <style>
     body {
@@ -42,199 +37,192 @@
     }
   </style>
   </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 overflow-x-hidden">
-<!-- Navigation -->
-<nav class="sticky top-0 z-50 bg-background-dark/90 backdrop-blur-md border-b border-primary/20">
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
+<!-- Top Navigation -->
+<nav class="sticky top-0 z-50 bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center h-20">
+<div class="flex items-center justify-between h-16">
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-primary text-3xl">swords</span>
-<span class="font-serif text-2xl font-bold tracking-tight text-primary">WHERE WINDS MEET</span>
+<span class="font-serif text-xl font-bold tracking-tight text-primary">WHERE WINDS MEET</span>
 </div>
 <div class="hidden md:flex items-center space-gap-8 gap-8">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">GAMEPLAY</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">WORLD</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#">NEWS</a>
-<a class="bg-primary text-background-dark px-6 py-2 rounded font-bold text-sm tracking-widest hover:brightness-110 transition-all" href="https://www.dropbox.com/scl/fo/qxhas6equ2cfd0wvmi6fy/ALz4XwEHPik2KW-lyknwZdQ?rlkey=jggk8puk1k2ya2bnbyp4sk2kg&amp;st=kkzkvtja&amp;dl=0">DOWNLOAD</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">HOME</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#features">FEATURES</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#media">MEDIA</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#requirements">SPECS</a>
 </div>
-<div class="md:hidden">
-<span class="material-symbols-outlined text-primary cursor-pointer">menu</span>
+<div>
+<a class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2 rounded-lg text-sm font-bold transition-all transform hover:scale-105" href="https://www.dropbox.com/scl/fo/qxhas6equ2cfd0wvmi6fy/ALz4XwEHPik2KW-lyknwZdQ?rlkey=jggk8puk1k2ya2bnbyp4sk2kg&amp;st=kkzkvtja&amp;dl=0">
+                        DOWNLOAD
+                    </a>
 </div>
 </div>
 </div>
 </nav>
 <!-- Hero Section -->
-<header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden border-b border-primary/30">
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-60" data-alt="Cinematic landscape of misty ancient Chinese mountains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsDQ7jrjia2MpPs8ZXmCjzjIErIsPhtsIAFdBiF3aVqJinBn8HwxVy4tBFHts58EYrAUygR9ZvjS8paP-s5I1IhrW9Y6e4sr849VgdGHbXIQ6PDkWPCGx9vYnj0zLDkbpmtztRa_kJo3jZhfE3cfajVlZdFpTVbJnd3Nn0Lhnw2Me7sLuLvDXo_n2GBgZ6at7RKM96ppL-rgsCHInOZj5CdtHWvwQsZNPIFuShd9KfIUipP_2XQVfSayRreuUs-XZn49v3VJfjWLyW"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-background-dark/40 via-background-dark/60 to-background-dark z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Cinematic landscape of ancient Chinese mountains with mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqR0pyIDVW_wL-1XpP6i1c21nvhqWqcjPcOvuCZNM74Qt6xjNprWG4i9O4eHFQjUCRf3KCcAIl82ZEnJzvtJnI6Q-enPpi9rPokGxECV82Di2MczaJoRQpgYanzzUttpcjxCLdZ9S9sNeVGOx7apKoF0GphYQfvn9PxbajBrgR0zZAkHCiMCZwd_IxcS80Q2xSdUm6td3AcXZUD91en5Ldql3Mj_tsX2IOA2LACulmIBOamW9wzpUcLI1CRZYsEByDExQcq3NvRfiH"/>
 </div>
-<div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-<h1 class="font-serif text-6xl md:text-8xl text-white mb-6 leading-tight drop-shadow-2xl">
-                Where <span class="text-primary italic">Winds</span> Meet
+<div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+<h1 class="font-serif text-6xl md:text-8xl font-black text-slate-100 mb-4 tracking-tighter">
+                Where Winds Meet
             </h1>
-<p class="text-xl md:text-2xl text-slate-300 font-light mb-10 tracking-[0.2em] uppercase">
+<p class="text-lg md:text-2xl font-light text-primary italic mb-10 tracking-wide font-serif">
                 An epic open-world Wuxia adventure
             </p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-<a class="group relative flex min-w-[240px] items-center justify-center overflow-hidden rounded-lg h-14 bg-primary text-background-dark text-lg font-bold tracking-[0.1em] hover:scale-105 transition-transform" href="https://www.dropbox.com/scl/fo/qxhas6equ2cfd0wvmi6fy/ALz4XwEHPik2KW-lyknwZdQ?rlkey=jggk8puk1k2ya2bnbyp4sk2kg&amp;st=kkzkvtja&amp;dl=0">
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<a class="group relative flex items-center justify-center px-10 py-4 bg-primary text-background-dark font-bold text-lg rounded-xl transition-all hover:shadow-[0_0_30px_rgba(197,159,89,0.5)]" href="https://www.dropbox.com/scl/fo/qxhas6equ2cfd0wvmi6fy/ALz4XwEHPik2KW-lyknwZdQ?rlkey=jggk8puk1k2ya2bnbyp4sk2kg&amp;st=kkzkvtja&amp;dl=0">
 <span class="material-symbols-outlined mr-2">download</span>
                     DOWNLOAD NOW
                 </a>
-<button class="flex min-w-[240px] items-center justify-center rounded-lg h-14 border-2 border-primary/50 text-primary text-lg font-bold tracking-[0.1em] hover:bg-primary/10 transition-colors">
+<button class="flex items-center text-slate-100 hover:text-primary transition-colors">
+<span class="material-symbols-outlined mr-2 text-3xl">play_circle</span>
                     WATCH TRAILER
                 </button>
 </div>
 </div>
-<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
-<span class="material-symbols-outlined text-primary text-3xl">keyboard_double_arrow_down</span>
-</div>
-</header>
-<!-- Video Showcase Section -->
-<section class="py-24 px-4 bg-background-dark wuxia-pattern">
+</section>
+<!-- Video Section -->
+<section class="py-20 px-4 bg-background-dark" id="media">
 <div class="max-w-6xl mx-auto">
-<div class="relative group rounded-xl overflow-hidden border border-primary/30 shadow-[0_0_50px_rgba(197,159,89,0.15)]">
-<div class="aspect-video bg-slate-900 flex items-center justify-center">
-<img class="absolute inset-0 w-full h-full object-cover opacity-50" data-alt="High quality game scenery with traditional Chinese architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIjGrgMsv5oU9sHWF_npLt6BBORXZMnzLowg1gRn-YnpSjDXTRqqynkTbpOUVtFp46stdMb48z7AGnzRsz2UfgbGyc_YLcnQ8bnRbp2SIZy1Y9a652wggdC5lnz63jCm_S2JcAMtwDtR3B_oFUks5jlBTs86w5pRlkpCDUc6K2b2BZsUUdWAl23FTFJtFAXd0gjBZMordpYhE8ows95DEgKgcgniTUO9X70f7hxCnreJNsvXQIUVChG4HtQZq7MoP4dCDRKbibhWuh"/>
-<button class="relative z-10 flex items-center justify-center rounded-full size-24 bg-primary/90 text-background-dark hover:scale-110 transition-transform shadow-xl">
+<div class="text-center mb-12">
+<h2 class="font-serif text-4xl font-bold text-slate-100 mb-2">Cinematic World</h2>
+<div class="h-1 w-20 bg-primary mx-auto"></div>
+</div>
+<div class="relative aspect-video rounded-2xl overflow-hidden border border-primary/20 shadow-2xl group">
+<div class="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Stunning cinematic sunset over a traditional pagoda" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBco-e9_tcs29JN_PP4ECm5mkihet4DRXw1JRDo98CIc_hDE-wgDuoCq411I5IEZKXXSSkSUqANQdbFURLj1QC1TG9CDKw2tYciU2bcgcwpJpEJrSjIKPIh62Xihhy35mxvNwap1g4MWqZkg7-a3HZBZr-dEokqnmW0QEhChskEuD-hVi126tw6Iw28NtR2mZ6GBl9i8SREx1Qup5cyjpRt2sPwicTuefmHbHJM6LckIq7V5LFKeot3ZRK1Bl4dfJKah-L9fU8vFzIe"/>
+<div class="absolute inset-0 flex items-center justify-center z-20">
+<button class="size-24 rounded-full bg-primary/90 text-background-dark flex items-center justify-center hover:scale-110 transition-transform shadow-xl">
 <span class="material-symbols-outlined text-5xl">play_arrow</span>
 </button>
 </div>
-<div class="absolute bottom-0 inset-x-0 p-8 bg-gradient-to-t from-background-dark to-transparent">
-<h3 class="font-serif text-3xl text-white">Official Gameplay Preview</h3>
-<p class="text-primary mt-2">Discover the vast world of the Northern Song Dynasty</p>
+<div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/80 to-transparent z-20">
+<p class="text-white font-serif italic">Official Gameplay Reveal - 4K Ultra Settings</p>
 </div>
 </div>
 </div>
 </section>
 <!-- Features Gallery -->
-<section class="py-24 px-4">
+<section class="py-24 px-4 bg-background-dark" id="features">
 <div class="max-w-7xl mx-auto">
-<div class="text-center mb-16">
-<h2 class="font-serif text-4xl md:text-5xl text-white mb-4 italic">Experience the Extraordinary</h2>
-<div class="h-1 w-24 bg-primary mx-auto"></div>
-</div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Card 1 -->
-<div class="group relative aspect-[4/5] overflow-hidden rounded-xl border border-primary/20 bg-slate-900">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70" data-alt="Martial arts action sequence in a bamboo forest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbph-eUj4kfn25yKEPvW9h--LmogLDdgeYFhoXhWaU_ZhD0SkcLHfpaYDwezJ1tCnhwcdFKu8VoRPbIYQtmm_5jp3a3D5LowKaOxOb8Pb3NBnOITeDKwAIKUhnDHU9xly5IYVBwsv9QiIuwYrXjKRu1ypt6mx7Ifm38ETLwfinIYIiTNmlinkpRLEKWzJUDIL7wtTH2vLXAqfe3Ku2DqB0oN7YKlDDGobRaYYnpVbcMnVwHeuFYYJdKXtMmZaqxTXR9HVUqFEV4DPV"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
-<div class="absolute bottom-0 p-8">
-<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Combat</span>
-<h4 class="font-serif text-2xl text-white mb-3">Fluid Combat</h4>
-<p class="text-slate-400 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">Master traditional martial arts and seamless weapon switching in high-intensity battles.</p>
+<!-- Feature 1 -->
+<div class="group relative overflow-hidden rounded-2xl border border-primary/10 bg-primary/5 flex flex-col">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Warrior performing a dynamic martial arts move" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmpX_mJeoA_qjESzjyBt4pbCtEJ-_MIb8hznn4zPvZLxLRjzteK9CiJm-JOZzqD5Cdr7B6yMesikKq0pHhA723VryEBmhepOYPB6T6BPkrDYOZHI2Q7tKlVA7eayOAPV96bGTpzHeyQg1NhZcwQVMME2V8n1yDZEKJaWjyMVUJ4vRhBrgk6SP74tAmEUvR1-W8mnWKdXVk76EjXh7JMy8e3sAaR_yfCVOfi7KqNFkbplzM5BhW4NPpeFwM5yWL8oYbEzi7GuIMxl_v"/>
+</div>
+<div class="p-8">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-4xl">flare</span>
+</div>
+<h3 class="font-serif text-2xl font-bold mb-3 text-slate-100">Fluid Combat</h3>
+<p class="text-slate-400 leading-relaxed">Master the art of unpredictable swordplay. Seamlessly transition between traditional Wuxia stances and reactive environment-based moves.</p>
 </div>
 </div>
-<!-- Card 2 -->
-<div class="group relative aspect-[4/5] overflow-hidden rounded-xl border border-primary/20 bg-slate-900">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70" data-alt="Vast open world map with diverse biomes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy2GogKPSLcvyDkyUh0LYQoL_d1d2YKI-NJC5jqDl3sRnf6QcfabH18gN6swq2zX-TkpRaOm00FI9eysTS2SL4CTJ7zd6rC2w_SDFhsp_gvkVJCFfz8Pqi7zTrlH8f5givRv50X1ri1aqyqEwLWa9Z0RPO8dTPapIAWRih202tyRTUjjd5Cw1CWJzE5aWPkFdcpE9JhLU6I6WM3Io7dMbA6ZeAH1TE-5q_ZTssMRZPB1lNms5HoES8urHCBa08KB8a8nBPeMHYvgak"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
-<div class="absolute bottom-0 p-8">
-<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Exploration</span>
-<h4 class="font-serif text-2xl text-white mb-3">Total Freedom</h4>
-<p class="text-slate-400 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">Every peak is climbable, every river navigable. Forge your own path in a truly sandbox world.</p>
+<!-- Feature 2 -->
+<div class="group relative overflow-hidden rounded-2xl border border-primary/10 bg-primary/5 flex flex-col">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Aerial view of vast lush green valley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7uT2v6J9rFrPtkTzNCsSH96kYubDAhQEqMfRLIIhF6sB8PkB6XO7dS8lU5mlmKxdwC7NFvnpG9TrdjbkUI7vP8SIPGuSebD578y8I-NXjN0bBL-gp8rQRZRSBGJJyzzIB0BmQ8HoTOaY1uNS3Zc5DKtOSELNYegx8HbIua_fJPL-4B4NtRlW-O0JWmruWVaB4m1BXfkG-xpPEeL3MrOBXzSEcRDrQzzQVzdagxZwoTT05szsQHUX6dBUDKq36z6LN84QKSX1unIVI"/>
+</div>
+<div class="p-8">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-4xl">travel_explore</span>
+</div>
+<h3 class="font-serif text-2xl font-bold mb-3 text-slate-100">Total Freedom</h3>
+<p class="text-slate-400 leading-relaxed">Explore a reactive open world. From the bustling capital to the serene wilderness, every path is yours to forge without boundaries.</p>
 </div>
 </div>
-<!-- Card 3 -->
-<div class="group relative aspect-[4/5] overflow-hidden rounded-xl border border-primary/20 bg-slate-900">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70" data-alt="Stunning architectural detail with cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3bcwgwgdhLFB1sLvc6qLTNc7_dFKSJgxqCAg-XKEP1xMH43y2Rsz5QULX5dBw1EklBWLXElNNwVnkM-OvoI4kOhL2Smo3ufB4kPEtIYqv7p1qP7iyt8ngEUju2F0kUUSytpuhV31Nbg1jmyL--WTEARZNTIjCUKyaR_2-PS2x-G86j5oMFERL1g66_n7vkO83RxkPI99hMzFD-ldsyGZ9LmUfCtkfKFpC0zU74KZ3DNHLkW6XPvgo1nG5j-bh04WWiTnBIZpT23Gf"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
-<div class="absolute bottom-0 p-8">
-<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Technology</span>
-<h4 class="font-serif text-2xl text-white mb-3">Next-gen Graphics</h4>
-<p class="text-slate-400 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">Ultra-realistic physics and dynamic weather systems powered by custom engine technology.</p>
+<!-- Feature 3 -->
+<div class="group relative overflow-hidden rounded-2xl border border-primary/10 bg-primary/5 flex flex-col">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High fidelity character detail close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDru3fPP-rmB8_uGLIgXUSIXG2DxyjpKtkfUXYHp8BuvOjMdt1IYPY-JzkuqRhip6tmPMnoi_s_pvqlrbt50vZJBSwi1GEZ4TxTiTw08pWaPG5hm_0G_X9J9iqJt8HjFooM9EFX3_nFXyVNfMBRxL4huqIsuahXClnKfXVY3IHcprRlefGjXjhL19uMGaub-jxyfrktltrOeoRRLLnDF_yyyM3MwtPk6hg7n0ww4sI_X4a3z2yR3fYvb0-3a8T_8QplD36Rz4qD0cTB"/>
+</div>
+<div class="p-8">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-4xl">high_quality</span>
+</div>
+<h3 class="font-serif text-2xl font-bold mb-3 text-slate-100">Next-gen Graphics</h3>
+<p class="text-slate-400 leading-relaxed">Powered by state-of-the-art rendering. Experience breathtaking visuals with hyper-realistic weather, lighting, and textures.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- Requirements Section -->
-<section class="py-24 px-4 bg-primary/5">
+<section class="py-24 px-4 bg-background-light dark:bg-[#1a1712]" id="requirements">
 <div class="max-w-4xl mx-auto">
-<div class="flex items-center gap-4 mb-12">
-<span class="material-symbols-outlined text-primary text-4xl">info</span>
-<h2 class="font-serif text-3xl text-white">Technical Requirements</h2>
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-widest text-sm">SPECIFICATIONS</span>
+<h2 class="font-serif text-4xl font-bold text-slate-100 mt-2">System Requirements</h2>
 </div>
-<div class="overflow-hidden border border-primary/30 rounded-xl bg-background-dark shadow-2xl">
-<table class="w-full text-left">
-<thead>
-<tr class="border-b border-primary/20 bg-primary/10">
-<th class="p-6 font-bold tracking-wider text-primary uppercase text-sm">Specification</th>
-<th class="p-6 font-bold tracking-wider text-primary uppercase text-sm">Requirement</th>
+<div class="overflow-hidden rounded-2xl border border-primary/20 bg-background-dark/50 shadow-xl">
+<table class="w-full text-left border-collapse">
+<thead class="bg-primary/10">
+<tr>
+<th class="p-6 font-serif text-lg text-primary border-b border-primary/20">Category</th>
+<th class="p-6 font-serif text-lg text-primary border-b border-primary/20">Requirement</th>
 </tr>
 </thead>
 <tbody class="text-slate-300">
-<tr class="border-b border-primary/10 hover:bg-white/5 transition-colors">
-<td class="p-6 font-medium">Platform</td>
-<td class="p-6">Desktop Windows Only</td>
+<tr class="border-b border-primary/10 hover:bg-primary/5 transition-colors">
+<td class="p-6 font-bold text-slate-100">OS Support</td>
+<td class="p-6">Desktop Windows Only (Win 10/11 64-bit)</td>
 </tr>
-<tr class="border-b border-primary/10 hover:bg-white/5 transition-colors">
-<td class="p-6 font-medium">Connectivity</td>
-<td class="p-6">Global Direct (No VPN Required)</td>
+<tr class="border-b border-primary/10 hover:bg-primary/5 transition-colors">
+<td class="p-6 font-bold text-slate-100">Network</td>
+<td class="p-6 flex items-center gap-2">
+                                No VPN Required 
+                                <span class="material-symbols-outlined text-green-500 text-sm">verified_user</span>
+</td>
 </tr>
-<tr class="border-b border-primary/10 hover:bg-white/5 transition-colors">
-<td class="p-6 font-medium">OS</td>
-<td class="p-6">Windows 10/11 64-bit</td>
+<tr class="border-b border-primary/10 hover:bg-primary/5 transition-colors">
+<td class="p-6 font-bold text-slate-100">Processor</td>
+<td class="p-6">Intel Core i7-9700 / AMD Ryzen 7 3700X</td>
 </tr>
-<tr class="hover:bg-white/5 transition-colors">
-<td class="p-6 font-medium">Storage</td>
-<td class="p-6">100GB SSD Recommended</td>
+<tr class="border-b border-primary/10 hover:bg-primary/5 transition-colors">
+<td class="p-6 font-bold text-slate-100">Memory</td>
+<td class="p-6">16 GB RAM</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-6 font-bold text-slate-100">Graphics</td>
+<td class="p-6">NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 XT</td>
 </tr>
 </tbody>
 </table>
 </div>
+<p class="mt-8 text-center text-slate-500 text-sm italic">
+                * Note: An SSD is highly recommended for the best open-world loading experience.
+            </p>
 </div>
 </section>
 <!-- Footer -->
-<footer class="py-16 px-4 bg-background-dark border-t border-primary/20">
-<div class="max-w-7xl mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
-<div class="flex items-center gap-2">
+<footer class="bg-background-dark py-12 px-4 border-t border-primary/10">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start">
+<div class="flex items-center gap-2 mb-4">
 <span class="material-symbols-outlined text-primary text-2xl">swords</span>
-<span class="font-serif text-xl font-bold text-white tracking-wider uppercase">Where Winds Meet</span>
+<span class="font-serif text-xl font-bold tracking-tight text-primary">WHERE WINDS MEET</span>
+</div>
+<p class="text-slate-500 text-sm">© 2024 Everstone Studios. All rights reserved.</p>
 </div>
 <div class="flex gap-6">
-<a class="size-10 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
-<span class="material-symbols-outlined text-xl">share</span>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<svg class="size-6 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
 </a>
-<a class="size-10 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
-<span class="material-symbols-outlined text-xl">public</span>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<svg class="size-6 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
 </a>
-<a class="size-10 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
-<span class="material-symbols-outlined text-xl">forum</span>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">language</span>
 </a>
 </div>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 text-sm text-slate-500">
-<div class="flex flex-col gap-4">
-<h5 class="text-primary font-bold">About</h5>
-<a class="hover:text-white transition-colors" href="#">Our Team</a>
-<a class="hover:text-white transition-colors" href="#">Technology</a>
-<a class="hover:text-white transition-colors" href="#">Press Kit</a>
-</div>
-<div class="flex flex-col gap-4">
-<h5 class="text-primary font-bold">Support</h5>
-<a class="hover:text-white transition-colors" href="#">FAQ</a>
-<a class="hover:text-white transition-colors" href="#">Contact Us</a>
-<a class="hover:text-white transition-colors" href="#">Community Guidelines</a>
-</div>
-<div class="flex flex-col gap-4">
-<h5 class="text-primary font-bold">Legal</h5>
-<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
-<a class="hover:text-white transition-colors" href="#">EULA</a>
-</div>
-<div class="flex flex-col gap-4">
-<h5 class="text-primary font-bold">Game Info</h5>
-<a class="hover:text-white transition-colors" href="#">Release Notes</a>
-<a class="hover:text-white transition-colors" href="#">Server Status</a>
-<a class="hover:text-white transition-colors" href="#">Merchandise</a>
-</div>
-</div>
-<div class="text-center pt-8 border-t border-white/5">
-<p class="text-slate-600 text-xs">
-                    © 2024 Everstone Studio. All Rights Reserved. "Where Winds Meet" and related logos are trademarks of NetEase Games.
-                </p>
+<div class="flex gap-8 text-xs font-bold tracking-widest text-slate-500 uppercase">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
 </div>
 </div>
 </footer>
