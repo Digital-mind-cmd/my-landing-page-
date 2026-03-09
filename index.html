@@ -1,26 +1,241 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Where Winds Meet | Action RPG</title>
-    <style>
-        :root { --gold: #c5a059; --dark: #0a0a0a; }
-        body { margin: 0; font-family: sans-serif; background: var(--dark); color: white; text-align: center; }
-        .hero { padding: 100px 20px; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2421370/ss_e9e7356262174304875323861298d070b4a7066a.1920x1080.jpg'); background-size: cover; }
-        .btn { background: var(--gold); color: black; padding: 20px 40px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; margin-top: 30px; font-size: 1.2rem; }
-        .video { margin: 50px auto; max-width: 800px; border: 2px solid var(--gold); }
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Where Winds Meet - Epic Wuxia Adventure</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c59f59",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#1e1a14",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .wuxia-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(197, 159, 89, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to bottom, #c59f59, #1e1a14) 1;
+        }
     </style>
-</head>
-<body>
-    <div class="hero">
-        <h1 style="color:var(--gold); font-size: 3rem;">WHERE WINDS MEET</h1>
-        <p>L'aventure épique en monde ouvert (Wuxia)</p>
-        <a href="https://www.dropbox.com/scl/fo/qxhas6equ2cfd0wvmi6fy/ALz4XwEHPik2KW-lyknwZdQ?rlkey=jggk8puk1k2ya2bnbyp4sk2kg&st=kkzkvtja&dl=0" class="btn">TÉLÉCHARGER MAINTENANT</a>
-    </div>
-    <div class="video">
-        <iframe width="100%" height="450" src="https://www.youtube.com/embed/fD-N8B1_t-0" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <p>© 2026 Desktop WIN Only | No VPN</p>
-</body>
-</html>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 overflow-x-hidden">
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-background-dark/90 backdrop-blur-md border-b border-primary/20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">swords</span>
+<span class="font-serif text-2xl font-bold tracking-tight text-primary">WHERE WINDS MEET</span>
+</div>
+<div class="hidden md:flex items-center space-gap-8 gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">GAMEPLAY</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">WORLD</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">NEWS</a>
+<a class="bg-primary text-background-dark px-6 py-2 rounded font-bold text-sm tracking-widest hover:brightness-110 transition-all" href="https://www.dropbox.com/scl/fo/qxhas6equ2cfd0wvmi6fy/ALz4XwEHPik2KW-lyknwZdQ?rlkey=jggk8puk1k2ya2bnbyp4sk2kg&amp;st=kkzkvtja&amp;dl=0">DOWNLOAD</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary cursor-pointer">menu</span>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden border-b border-primary/30">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60" data-alt="Cinematic landscape of misty ancient Chinese mountains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsDQ7jrjia2MpPs8ZXmCjzjIErIsPhtsIAFdBiF3aVqJinBn8HwxVy4tBFHts58EYrAUygR9ZvjS8paP-s5I1IhrW9Y6e4sr849VgdGHbXIQ6PDkWPCGx9vYnj0zLDkbpmtztRa_kJo3jZhfE3cfajVlZdFpTVbJnd3Nn0Lhnw2Me7sLuLvDXo_n2GBgZ6at7RKM96ppL-rgsCHInOZj5CdtHWvwQsZNPIFuShd9KfIUipP_2XQVfSayRreuUs-XZn49v3VJfjWLyW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+<h1 class="font-serif text-6xl md:text-8xl text-white mb-6 leading-tight drop-shadow-2xl">
+                Where <span class="text-primary italic">Winds</span> Meet
+            </h1>
+<p class="text-xl md:text-2xl text-slate-300 font-light mb-10 tracking-[0.2em] uppercase">
+                An epic open-world Wuxia adventure
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<a class="group relative flex min-w-[240px] items-center justify-center overflow-hidden rounded-lg h-14 bg-primary text-background-dark text-lg font-bold tracking-[0.1em] hover:scale-105 transition-transform" href="https://www.dropbox.com/scl/fo/qxhas6equ2cfd0wvmi6fy/ALz4XwEHPik2KW-lyknwZdQ?rlkey=jggk8puk1k2ya2bnbyp4sk2kg&amp;st=kkzkvtja&amp;dl=0">
+<span class="material-symbols-outlined mr-2">download</span>
+                    DOWNLOAD NOW
+                </a>
+<button class="flex min-w-[240px] items-center justify-center rounded-lg h-14 border-2 border-primary/50 text-primary text-lg font-bold tracking-[0.1em] hover:bg-primary/10 transition-colors">
+                    WATCH TRAILER
+                </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+<span class="material-symbols-outlined text-primary text-3xl">keyboard_double_arrow_down</span>
+</div>
+</header>
+<!-- Video Showcase Section -->
+<section class="py-24 px-4 bg-background-dark wuxia-pattern">
+<div class="max-w-6xl mx-auto">
+<div class="relative group rounded-xl overflow-hidden border border-primary/30 shadow-[0_0_50px_rgba(197,159,89,0.15)]">
+<div class="aspect-video bg-slate-900 flex items-center justify-center">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50" data-alt="High quality game scenery with traditional Chinese architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIjGrgMsv5oU9sHWF_npLt6BBORXZMnzLowg1gRn-YnpSjDXTRqqynkTbpOUVtFp46stdMb48z7AGnzRsz2UfgbGyc_YLcnQ8bnRbp2SIZy1Y9a652wggdC5lnz63jCm_S2JcAMtwDtR3B_oFUks5jlBTs86w5pRlkpCDUc6K2b2BZsUUdWAl23FTFJtFAXd0gjBZMordpYhE8ows95DEgKgcgniTUO9X70f7hxCnreJNsvXQIUVChG4HtQZq7MoP4dCDRKbibhWuh"/>
+<button class="relative z-10 flex items-center justify-center rounded-full size-24 bg-primary/90 text-background-dark hover:scale-110 transition-transform shadow-xl">
+<span class="material-symbols-outlined text-5xl">play_arrow</span>
+</button>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-8 bg-gradient-to-t from-background-dark to-transparent">
+<h3 class="font-serif text-3xl text-white">Official Gameplay Preview</h3>
+<p class="text-primary mt-2">Discover the vast world of the Northern Song Dynasty</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Gallery -->
+<section class="py-24 px-4">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-serif text-4xl md:text-5xl text-white mb-4 italic">Experience the Extraordinary</h2>
+<div class="h-1 w-24 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl border border-primary/20 bg-slate-900">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70" data-alt="Martial arts action sequence in a bamboo forest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbph-eUj4kfn25yKEPvW9h--LmogLDdgeYFhoXhWaU_ZhD0SkcLHfpaYDwezJ1tCnhwcdFKu8VoRPbIYQtmm_5jp3a3D5LowKaOxOb8Pb3NBnOITeDKwAIKUhnDHU9xly5IYVBwsv9QiIuwYrXjKRu1ypt6mx7Ifm38ETLwfinIYIiTNmlinkpRLEKWzJUDIL7wtTH2vLXAqfe3Ku2DqB0oN7YKlDDGobRaYYnpVbcMnVwHeuFYYJdKXtMmZaqxTXR9HVUqFEV4DPV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Combat</span>
+<h4 class="font-serif text-2xl text-white mb-3">Fluid Combat</h4>
+<p class="text-slate-400 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">Master traditional martial arts and seamless weapon switching in high-intensity battles.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl border border-primary/20 bg-slate-900">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70" data-alt="Vast open world map with diverse biomes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy2GogKPSLcvyDkyUh0LYQoL_d1d2YKI-NJC5jqDl3sRnf6QcfabH18gN6swq2zX-TkpRaOm00FI9eysTS2SL4CTJ7zd6rC2w_SDFhsp_gvkVJCFfz8Pqi7zTrlH8f5givRv50X1ri1aqyqEwLWa9Z0RPO8dTPapIAWRih202tyRTUjjd5Cw1CWJzE5aWPkFdcpE9JhLU6I6WM3Io7dMbA6ZeAH1TE-5q_ZTssMRZPB1lNms5HoES8urHCBa08KB8a8nBPeMHYvgak"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Exploration</span>
+<h4 class="font-serif text-2xl text-white mb-3">Total Freedom</h4>
+<p class="text-slate-400 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">Every peak is climbable, every river navigable. Forge your own path in a truly sandbox world.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl border border-primary/20 bg-slate-900">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70" data-alt="Stunning architectural detail with cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3bcwgwgdhLFB1sLvc6qLTNc7_dFKSJgxqCAg-XKEP1xMH43y2Rsz5QULX5dBw1EklBWLXElNNwVnkM-OvoI4kOhL2Smo3ufB4kPEtIYqv7p1qP7iyt8ngEUju2F0kUUSytpuhV31Nbg1jmyL--WTEARZNTIjCUKyaR_2-PS2x-G86j5oMFERL1g66_n7vkO83RxkPI99hMzFD-ldsyGZ9LmUfCtkfKFpC0zU74KZ3DNHLkW6XPvgo1nG5j-bh04WWiTnBIZpT23Gf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2 block">Technology</span>
+<h4 class="font-serif text-2xl text-white mb-3">Next-gen Graphics</h4>
+<p class="text-slate-400 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">Ultra-realistic physics and dynamic weather systems powered by custom engine technology.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Requirements Section -->
+<section class="py-24 px-4 bg-primary/5">
+<div class="max-w-4xl mx-auto">
+<div class="flex items-center gap-4 mb-12">
+<span class="material-symbols-outlined text-primary text-4xl">info</span>
+<h2 class="font-serif text-3xl text-white">Technical Requirements</h2>
+</div>
+<div class="overflow-hidden border border-primary/30 rounded-xl bg-background-dark shadow-2xl">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-primary/20 bg-primary/10">
+<th class="p-6 font-bold tracking-wider text-primary uppercase text-sm">Specification</th>
+<th class="p-6 font-bold tracking-wider text-primary uppercase text-sm">Requirement</th>
+</tr>
+</thead>
+<tbody class="text-slate-300">
+<tr class="border-b border-primary/10 hover:bg-white/5 transition-colors">
+<td class="p-6 font-medium">Platform</td>
+<td class="p-6">Desktop Windows Only</td>
+</tr>
+<tr class="border-b border-primary/10 hover:bg-white/5 transition-colors">
+<td class="p-6 font-medium">Connectivity</td>
+<td class="p-6">Global Direct (No VPN Required)</td>
+</tr>
+<tr class="border-b border-primary/10 hover:bg-white/5 transition-colors">
+<td class="p-6 font-medium">OS</td>
+<td class="p-6">Windows 10/11 64-bit</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors">
+<td class="p-6 font-medium">Storage</td>
+<td class="p-6">100GB SSD Recommended</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="py-16 px-4 bg-background-dark border-t border-primary/20">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">swords</span>
+<span class="font-serif text-xl font-bold text-white tracking-wider uppercase">Where Winds Meet</span>
+</div>
+<div class="flex gap-6">
+<a class="size-10 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="size-10 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+<a class="size-10 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-xl">forum</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 text-sm text-slate-500">
+<div class="flex flex-col gap-4">
+<h5 class="text-primary font-bold">About</h5>
+<a class="hover:text-white transition-colors" href="#">Our Team</a>
+<a class="hover:text-white transition-colors" href="#">Technology</a>
+<a class="hover:text-white transition-colors" href="#">Press Kit</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-primary font-bold">Support</h5>
+<a class="hover:text-white transition-colors" href="#">FAQ</a>
+<a class="hover:text-white transition-colors" href="#">Contact Us</a>
+<a class="hover:text-white transition-colors" href="#">Community Guidelines</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-primary font-bold">Legal</h5>
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">EULA</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-primary font-bold">Game Info</h5>
+<a class="hover:text-white transition-colors" href="#">Release Notes</a>
+<a class="hover:text-white transition-colors" href="#">Server Status</a>
+<a class="hover:text-white transition-colors" href="#">Merchandise</a>
+</div>
+</div>
+<div class="text-center pt-8 border-t border-white/5">
+<p class="text-slate-600 text-xs">
+                    © 2024 Everstone Studio. All Rights Reserved. "Where Winds Meet" and related logos are trademarks of NetEase Games.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
