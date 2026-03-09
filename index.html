@@ -3,217 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Where Winds Meet | Action RPG Officiel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Where Winds Meet | Action RPG</title>
     <style>
-        :root {
-            --gold: #c5a059;
-            --dark: #0a0a0a;
-            --card-bg: #161616;
-            --text: #ffffff;
-            --gold-glow: rgba(197, 160, 89, 0.4);
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--dark);
-            color: var(--text);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2421370/ss_e9e7356262174304875323861298d070b4a7066a.1920x1080.jpg') no-repeat center center/cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(3rem, 10vw, 6rem);
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            margin-bottom: 20px;
-            filter: drop-shadow(0 0 15px var(--gold-glow));
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin-bottom: 40px;
-            color: #ccc;
-        }
-
-        /* Animated Download Button */
-        .download-btn {
-            background: var(--gold);
-            color: black;
-            padding: 20px 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.4rem;
-            border-radius: 5px;
-            transition: 0.3s;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(197, 160, 89, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); }
-        }
-
-        .download-btn:hover { background: #e6bc6a; transform: scale(1.1); animation: none; }
-
-        /* Sections General */
-        section { padding: 100px 10%; text-align: center; }
-        h2 { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 2.5rem; margin-bottom: 50px; }
-
-        /* Video Section */
-        .video-container {
-            max-width: 900px;
-            margin: 0 auto;
-            border: 2px solid var(--gold);
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 0 30px rgba(197, 160, 89, 0.2);
-        }
-
-        .video-container iframe { width: 100%; aspect-ratio: 16/9; display: block; }
-
-        /* Features Grid */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .feature-card {
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 15px;
-            border: 1px solid #333;
-            transition: 0.3s;
-        }
-
-        .feature-card:hover { border-color: var(--gold); transform: translateY(-10px); }
-        .feature-card h3 { color: var(--gold); margin-bottom: 15px; }
-
-        /* Requirements Table */
-        .requirements-table {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            border-collapse: collapse;
-            background: var(--card-bg);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .requirements-table th, .requirements-table td {
-            padding: 20px;
-            border: 1px solid #333;
-            text-align: left;
-        }
-
-        .requirements-table th { background: var(--gold); color: black; }
-
-        /* Footer */
-        footer {
-            padding: 60px 10%;
-            background: #050505;
-            border-top: 1px solid #222;
-            text-align: center;
-        }
-
-        .social-links a { color: var(--gold); margin: 0 15px; text-decoration: none; font-size: 0.9rem; }
-        .social-links a:hover { color: white; }
-        .copyright { margin-top: 20px; color: #555; font-size: 0.8rem; }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            section { padding: 60px 5%; }
-            .hero h1 { font-size: 3.5rem; }
-        }
+        :root { --gold: #c5a059; --dark: #0a0a0a; }
+        body { margin: 0; font-family: sans-serif; background: var(--dark); color: white; text-align: center; }
+        .hero { padding: 100px 20px; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2421370/ss_e9e7356262174304875323861298d070b4a7066a.1920x1080.jpg'); background-size: cover; }
+        .btn { background: var(--gold); color: black; padding: 20px 40px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; margin-top: 30px; font-size: 1.2rem; }
+        .video { margin: 50px auto; max-width: 800px; border: 2px solid var(--gold); }
     </style>
 </head>
 <body>
-
     <div class="hero">
-        <h1>Where Winds Meet</h1>
-        <p>Plongez dans un monde ouvert magistral. Un mélange unique d'arts martiaux, de liberté totale et de mystères ancestraux.</p>
-        <a href="https://www.dropbox.com/scl/fo/qxhas6equ2cfd0wvmi6fy/ALz4XwEHPik2KW-lyknwZdQ?rlkey=jggk8puk1k2ya2bnbyp4sk2kg&st=kkzkvtja&dl=0" class="download-btn">TÉLÉCHARGER MAINTENANT</a>
+        <h1 style="color:var(--gold); font-size: 3rem;">WHERE WINDS MEET</h1>
+        <p>L'aventure épique en monde ouvert (Wuxia)</p>
+        <a href="https://www.dropbox.com/scl/fo/qxhas6equ2cfd0wvmi6fy/ALz4XwEHPik2KW-lyknwZdQ?rlkey=jggk8puk1k2ya2bnbyp4sk2kg&st=kkzkvtja&dl=0" class="btn">TÉLÉCHARGER MAINTENANT</a>
     </div>
-
-    <section>
-        <h2>Découvrez le Gameplay</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/fD-N8B1_t-0" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <section style="background-color: #0d0d0d;">
-        <h2>L'Art de la Guerre et de la Paix</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>Combat Fluide</h3>
-                <p>Maîtrisez des techniques de Wuxia légendaires avec des combats à l'épée rapides et dynamiques.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Liberté Totale</h3>
-                <p>Choisissez votre destin : soyez un héros, un marchand ou un simple voyageur dans un monde vivant.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Graphismes Next-gen</h3>
-                <p>Une Chine ancienne reconstituée avec une fidélité visuelle époustouflante et des cycles météo réels.</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Configuration Requise</h2>
-        <table class="requirements-table">
-            <tr>
-                <th>Composant</th>
-                <th>Spécification</th>
-            </tr>
-            <tr>
-                <td>Système</td>
-                <td>Windows 10/11 (64-bit)</td>
-            </tr>
-            <tr>
-                <td>Connexion</td>
-                <td>Desktop Win Only - No VPN</td>
-            </tr>
-            <tr>
-                <td>Stockage</td>
-                <td>SSD Recommandé</td>
-            </tr>
-        </table>
-    </section>
-
-    <footer>
-        <div class="social-links">
-            <a href="#">TWITTER</a>
-            <a href="#">DISCORD</a>
-            <a href="#">YOUTUBE</a>
-        </div>
-        <div class="copyright">
-            © 2026 Where Winds Meet Project. Tous droits réservés. <br>
-            Optimisé pour une expérience Desktop fluide.
-        </div>
-    </footer>
-
+    <div class="video">
+        <iframe width="100%" height="450" src="https://www.youtube.com/embed/fD-N8B1_t-0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p>© 2026 Desktop WIN Only | No VPN</p>
 </body>
 </html>
